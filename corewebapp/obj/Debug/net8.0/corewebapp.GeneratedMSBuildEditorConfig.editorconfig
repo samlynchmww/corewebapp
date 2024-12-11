@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/saml/Code/MWW-Bitbucket/MWWOnDemand/core_app/corewebapp/corewebapp
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/saml/Code/MWW-Bitbucket/MWWOnDemand/core_app/corewebapp/corewebapp/Pages/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/saml/Code/MWW-Bitbucket/MWWOnDemand/core_app/corewebapp/corewebapp/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

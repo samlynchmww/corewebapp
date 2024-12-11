@@ -21,9 +21,12 @@
             padding: 100px 0;
             text-align: center;
         }
-        .time {
+        .quote-section {
+            margin-top: 50px;
+            text-align: center;
             font-size: 1.5rem;
-            margin-top: 20px;
+            font-style: italic;
+            color: #6a11cb;
         }
         .btn-custom {
             background-color: #ff4757;
@@ -38,10 +41,30 @@
         <button class="btn btn-custom" onclick="showAlert()">Click Me!</button>
     </div>
 
+    <div class="quote-section" id="quoteSection">
+        <p id="quoteText"></p>
+    </div>
+
     <script>
         function showAlert() {
             alert("Thanks for visiting my cool page!");
         }
+
+        const quotes = [
+            "The only way to do great work is to love what you do. - Steve Jobs",
+            "Life is what happens when you're busy making other plans. - John Lennon",
+            "Get busy living or get busy dying. - Stephen King",
+            "You have within you right now, everything you need to deal with whatever the world can throw at you. - Brian Tracy",
+            "Believe you can and you're halfway there. - Theodore Roosevelt"
+        ];
+
+        function displayRandomQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById("quoteText").innerText = quotes[randomIndex];
+        }
+
+        // Display a random quote when the page loads
+        window.onload = displayRandomQuote;
     </script>
 </body>
 </html>
