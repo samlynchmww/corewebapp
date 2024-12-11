@@ -4,7 +4,44 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Hello, world! The time on the server is @DateTime.Now</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .hero {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .time {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+        .btn-custom {
+            background-color: #ff4757;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1 class="display-4">Welcome to My Cool Page!</h1>
+        <p class="time">Hello, world! The time on the server is @DateTime.Now</p>
+        <button class="btn btn-custom" onclick="showAlert()">Click Me!</button>
+    </div>
+
+    <script>
+        function showAlert() {
+            alert("Thanks for visiting my cool page!");
+        }
+    </script>
+</body>
+</html>
